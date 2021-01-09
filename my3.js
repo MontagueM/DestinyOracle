@@ -35,7 +35,7 @@ function main() {
   console.log(window.location.href);
   var cubemap = window.location.href.split('cubemap=')[1];
   if (cubemap === undefined) {
-    cubemap = 'black_0';
+    cubemap = 'globals_8';
   }
   console.log(cubemap);
   const cubemap_direc = 'cubemaps/';
