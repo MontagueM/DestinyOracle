@@ -32,7 +32,12 @@ function main() {
   scene.add(light);
 
   const loader = new THREE.CubeTextureLoader();
-  const cubemap = 'black_0';
+  console.log(window.location.href);
+  var cubemap = window.location.href.split('cubemap=')[1];
+  if (cubemap === undefined) {
+    cubemap = 'black_0';
+  }
+  console.log(cubemap);
   const cubemap_direc = 'cubemaps/';
   var skybox = loader.load( [
       cubemap_direc + cubemap + '_1.png',
@@ -84,6 +89,9 @@ function main() {
                   cubemap_direc + cubemap + '_5.png'] );
 
               scene.background = skybox;
+
+              var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + '?cubemap=' + cubemap;
+              window.history.pushState({ path: refresh }, '', refresh);
             }
 
       }
