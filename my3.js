@@ -59,10 +59,10 @@ function main() {
     // const loader = new DDS.DDSLoader();
     const loader = new THREE.CubeTextureLoader();
     const cubemap = 'black_0';
-    const cubemap_direc = 'I:/DestinyCubemaps/cubemaps/';
+    const cubemap_direc = 'cubemaps/';
     // const cubemap_direc = '/static/oracleapp/cubemaps/';
     console.log('ex ' + cubemap_direc + cubemap + '_0.png');
-
+    loader.setCrossOrigin('Access-Control-Allow-Origin');
     // Mirrored
     const skybox = loader.load( [
         cubemap_direc + cubemap + '_1.png',
