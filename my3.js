@@ -32,13 +32,19 @@ function main() {
   scene.add(light);
 
   const loader = new THREE.CubeTextureLoader();
-  console.log(window.location.href);
-  var cubemap = window.location.href.split('cubemap=')[1];
+  // console.log(window.location.href);
+  var cubemap = window.location.href.split('cubemap=')[1].split('?')[0];
+  var ver = window.location.href.split('ver=')[1];
+  // console.log(cubemap);
+  // console.log(ver);
   if (cubemap === undefined) {
     cubemap = 'globals_8';
   }
-  console.log(cubemap);
-  const cubemap_direc = 'cubemaps/';
+  if (ver === undefined) {
+    ver = 'v3013';
+  }
+  // console.log(cubemap);
+  var cubemap_direc = 'cubemaps' + ver + '/';
   var skybox = loader.load( [
       cubemap_direc + cubemap + '_1.png',
       cubemap_direc + cubemap + '_0.png',
@@ -51,52 +57,71 @@ function main() {
   scene.autoUpdate = true;
 
   // Read cubemap list
+  function getList(ver) {
+    var request = new XMLHttpRequest();
+    // console.log('cubemap_list_' + ver + '.txt')
+    request.open('GET', 'cubemap_list_' + ver + '.txt', true);
+    request.send(null);
+    request.onreadystatechange = function () {
+      if (request.readyState === 4 && request.status === 200) {
+        var type = request.getResponseHeader('Content-Type');
+        if (type.indexOf("text") !== 1) {
+          var cubemap_array = request.responseText.split('\n');
 
-  var request = new XMLHttpRequest();
-  request.open('GET', 'cubemap_list.txt', true);
-  request.send(null);
-  request.onreadystatechange = function () {
-    if (request.readyState === 4 && request.status === 200) {
-      var type = request.getResponseHeader('Content-Type');
-      if (type.indexOf("text") !== 1) {
-        var cubemap_array = request.responseText.split('\n');
+          // Adding buttons
+          for (let c of cubemap_array) {
+            let btn = document.createElement('button');
+            btn.classList.add('btn');
+            btn.classList.add('cubemap');
+            btn.classList.add('btn-outline-dark')
+            btn.setAttribute('data-key', c);
+            btn.textContent = c;
+            document.getElementById('buttons').append(btn);
+          }
 
-        // Adding buttons
-        for (let c of cubemap_array) {
-          let btn = document.createElement('button');
-          btn.classList.add('btn');
-          btn.classList.add('btn-outline-dark')
-          btn.setAttribute('data-key', c);
-          btn.textContent = c;
-          document.getElementById('buttons').append(btn);
-        }
+          // Adding button fn
+          const buttons = document.querySelectorAll(".cubemap");
 
-        // Adding button fn
-        const buttons = document.querySelectorAll(".btn");
+          for (const btn of buttons) {
+            btn.addEventListener('click', changeBg);
+          }
 
-        for (const btn of buttons) {
-          btn.addEventListener('click', changeBg);
-        }
+          // Adding button fn
+          const versions = document.querySelectorAll(".ver");
+
+          for (const btn of versions) {
+            btn.addEventListener('click', changeList);
+          }
+
+          function changeList(e) {
+            var ver = e.target.dataset.key;
+            document.getElementById('buttons').innerHTML = '';
+            getList(ver);
+          }
+
 
           function changeBg(e) {
-              var cubemap = e.target.dataset.key;
-              var skybox = loader.load( [
-                  cubemap_direc + cubemap + '_1.png',
-                  cubemap_direc + cubemap + '_0.png',
-                  cubemap_direc + cubemap + '_2.png',
-                  cubemap_direc + cubemap + '_3.png',
-                  cubemap_direc + cubemap + '_4.png',
-                  cubemap_direc + cubemap + '_5.png'] );
+            var cubemap = e.target.dataset.key;
+            var cubemap_direc = 'cubemaps' + ver + '/';
+            var skybox = loader.load([
+              cubemap_direc + cubemap + '_1.png',
+              cubemap_direc + cubemap + '_0.png',
+              cubemap_direc + cubemap + '_2.png',
+              cubemap_direc + cubemap + '_3.png',
+              cubemap_direc + cubemap + '_4.png',
+              cubemap_direc + cubemap + '_5.png']);
 
-              scene.background = skybox;
+            scene.background = skybox;
 
-              var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + '?cubemap=' + cubemap;
-              window.history.pushState({ path: refresh }, '', refresh);
-            }
+            var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + '?cubemap=' + cubemap + '?ver=' + ver;
+            window.history.pushState({path: refresh}, '', refresh);
+          }
 
+        }
       }
     }
   }
+  getList(ver);
 
 
   function resizeRendererToDisplaySize(renderer) {
