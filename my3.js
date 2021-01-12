@@ -33,7 +33,20 @@ function main() {
 
   const loader = new THREE.CubeTextureLoader();
   // console.log(window.location.href);
-  var cubemap = window.location.href.split('cubemap=')[1].split('?')[0];
+  if (window.location.href.includes('cubemap=')) {
+      var cubemap = window.location.href.split('cubemap=')[1].split('?')[0];
+  }
+  else
+  {
+    var cubemap = 'globals_8';
+  }
+  if (window.location.href.includes('ver=')) {
+      var ver = window.location.href.split('cubemap=')[1].split('?')[0];
+  }
+  else
+  {
+    var ver = 'v3013';
+  }
   var ver = window.location.href.split('ver=')[1];
   // console.log(cubemap);
   // console.log(ver);
@@ -43,7 +56,8 @@ function main() {
   if (ver === undefined) {
     ver = 'v3013';
   }
-  // console.log(cubemap);
+  console.log(cubemap);
+  console.log(ver);
   var cubemap_direc = 'cubemaps' + ver + '/';
   var skybox = loader.load( [
       cubemap_direc + cubemap + '_1.png',
