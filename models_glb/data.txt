@@ -1,0 +1,22 @@
+0_Minotaur.glb
+1_Honored Centurion.glb
+2_Quantum Cyclops.glb
+3_Consecrated Mind, Sol Inherent.glb
+4_Supplicant.glb
+5_Sanctified Mind, Sol Inherent.glb
+6_Navâ´ta, Eir Spawn.glb
+7_Crota's Bane_Tracer Shank.glb
+8_Knight.glb
+9_Revenant Shrieker.glb
+10_Captain.glb
+11_Navâ´ta, Eir Spawn.glb
+12_Barrier Servitor.glb
+13_Unstoppable Ogre.glb
+14_Devil Walker.glb
+15_Revenant Cursed Thrall.glb
+16_Quantum Minotaur.glb
+17_Reaver Vandal.glb
+18_Reaver Vandal.glb
+19_Reaver Vandal.glb
+20_Acolyte.glb
+21_Exploder Shank.glb
