@@ -20,3 +20,133 @@
 19_Reaver Vandal.glb
 20_Acolyte.glb
 21_Exploder Shank.glb
+22_Technocrat's Assistant.glb
+23_Exploder Shank.glb
+24_Resilient Heavy Shank.glb
+25_Overload Captain.glb
+26_Overload Captain.glb
+27_Heavy Shank.glb
+28_Servitor.glb
+29_Wretch.glb
+30_Resilient Vandal.glb
+31_Resilient Homing Shank.glb
+32_Prime Ether Servitor.glb
+33_Ransack Captain.glb
+34_Transport Servitor.glb
+35_Marauder.glb
+0_Minotaur.glb
+1_Honored Centurion.glb
+2_Quantum Cyclops.glb
+3_Consecrated Mind, Sol Inherent.glb
+4_Supplicant.glb
+5_Sanctified Mind, Sol Inherent.glb
+6_Navâ´ta, Eir Spawn.glb
+7_Tracer Shank_Crota's Bane.glb
+8_Knight.glb
+9_Revenant Shrieker.glb
+10_Captain.glb
+11_Navâ´ta, Eir Spawn.glb
+12_Barrier Servitor.glb
+13_Unstoppable Ogre.glb
+14_Devil Walker.glb
+15_Revenant Cursed Thrall.glb
+16_Quantum Minotaur.glb
+17_Reaver Vandal.glb
+18_Reaver Vandal.glb
+19_Reaver Vandal.glb
+20_Acolyte.glb
+21_Exploder Shank.glb
+22_Technocrat's Assistant.glb
+23_Exploder Shank.glb
+24_Resilient Heavy Shank.glb
+25_Overload Captain.glb
+26_Overload Captain.glb
+27_Heavy Shank.glb
+28_Servitor.glb
+29_Wretch.glb
+30_Resilient Vandal.glb
+31_Resilient Homing Shank.glb
+32_Prime Ether Servitor.glb
+33_Ransack Captain.glb
+34_Transport Servitor.glb
+35_Marauder.glb
+36_Wretch.glb
+37_Colossus.glb
+38_Resilient Tracer Shank.glb
+39_Hive Wrathborn.glb
+40_Xillox, Oppression of Xivu Arath.glb
+41_Corrupted Raider.glb
+42_Dul Arath, Retainer to Xivu Arath.glb
+43_Remnant of Felwinter_Acolyte's Eye.glb
+44_Corrupted Screeb.glb
+45_Taken Ogre.glb
+46_Harpy_Taken Acolyte.glb
+47_Ravenous Taken Minotaur_Quantum Hydra.glb
+48_Ravenous Taken Knight.glb
+49_Ravenous Taken Goblin.glb
+50_Vanguard Scout_Hallowed Ogre.glb
+51_Ravenous Taken Centurion.glb
+52_Shuro Chi, the Corrupted.glb
+53_Revenant Cursed Thrall.glb
+54_Val Belyx, Gauntlet of Incaru.glb
+55_Priest of Incaru.glb
+56_Val Belyx, Gauntlet of Incaru.glb
+57_The Odynom.glb
+58_Yamaat, Ascendant Sentinel.glb
+59_Yamaat, Ascendant Sentinel.glb
+60_Teksis, Ascendant Sentinel.glb
+61_Teksis, Ascendant Sentinel.glb
+62_Corrupted Chieftain.glb
+63_High Celebrant of Xivu Arath.glb
+64_Kruvii, Subversive Chieftain.glb
+65_Quantum Minotaur.glb
+66_Devoured Ogre_Cyclops Zealot.glb
+67_Drekaa, Warmonger Chieftain.glb
+68_Corrupted Raider.glb
+69_Corrupted Raider.glb
+70_Quantum Minotaur.glb
+71_Stealth Resilient Vandal_Ravenous Taken Phalanx.glb
+72_Remnant of Felwinter_Acolyte's Eye.glb
+73_Riven of a Thousand Voices.glb
+74_Devil Walker.glb
+75_Eye of Riven.glb
+76_Might of Riven.glb
+77_Kalli, the Corrupted.glb
+78_Kalli, the Corrupted.glb
+79_Ferocious Ogre.glb
+80_Shuro Chi, the Corrupted.glb
+81_Ashorc, Temple Claimant.glb
+82_Truum, the Waking.glb
+83_Minotaur.glb
+84_Ogre Ascendant_Praedyth.glb
+85_Morgeth, the Spirekeeper.glb
+86_Ravenous Taken Vandal_Greksis, Devil Claw.glb
+87_Ogre Ascendant_Praedyth.glb
+88_Knight.glb
+89_Honored Colossus.glb
+90_Red Legion Goliath.glb
+91_Honored Phalanx.glb
+92_Blood Guard Centurion.glb
+93_Taken Psion_The Queen.glb
+94_Arach Jalaal_Shadow Thrall.glb
+95_Resilient Tracer Shank_Taken Hobgoblin.glb
+96_Ravenous Taken Wizard_Postmaster.glb
+97_Research Assistant_Taken Minotaur.glb
+98_Ravenous Taken Thrall_Goliath Tank.glb
+99_Taken Knight.glb
+100_Taken Thrall_Honored Legionary.glb
+101_Taken Wizard_Tomb Ship.glb
+102_Taken Centurion.glb
+103_Lightseeker Taken Acolyte.glb
+104_Unstoppable Taken Phalanx.glb
+105_Taken Wizard_Tomb Ship.glb
+106_Ravenous Taken Thrall_Taken Goblin.glb
+107_Ravenous Taken Thrall_Taken Goblin.glb
+108_Taken Centurion.glb
+109_Ravenous Taken Centurion.glb
+110_Emissary of Savathâ»n.glb
+111_Emissary of Savathâ»n.glb
+112_Ravenous Taken Acolyte_Minotaur.glb
+113_Emissary of Savathâ»n.glb
+114_Ashorc, Temple Claimant.glb
+115_Remnant of Felwinter_Acolyte's Eye.glb
