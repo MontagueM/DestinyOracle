@@ -7,3 +7,7 @@ The cubemaps are taken directly from Destiny 2, with some of the visual artifact
 
 Models: http://montaguem.com/models
 Cubemaps: http://montaguem.com/cubemaps
+
+## Licensing
+
+The cubemaps and models are owned by Bungie and hence must not be used commercially. Please cite this work or myself if these are used for more non-commercial work.
